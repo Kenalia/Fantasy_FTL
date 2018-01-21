@@ -15,10 +15,10 @@ public class GameManager : MonoBehaviour {
         }
         else
         {
-            DestroyImmediate(this);
+            DestroyImmediate(this.gameObject);
         }
 
-        DontDestroyOnLoad(this);
+        DontDestroyOnLoad(this.gameObject);
     }
 
     public void LoadScene(string sceneName)

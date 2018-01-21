@@ -14,9 +14,9 @@ public class VideoManager : MonoBehaviour {
         }
         else
         {
-            DestroyImmediate(this);
+            DestroyImmediate(this.gameObject);
         }
 
-        DontDestroyOnLoad(this);
+        DontDestroyOnLoad(this.gameObject);
     }
 }

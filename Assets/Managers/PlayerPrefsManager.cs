@@ -15,10 +15,10 @@ public class PlayerPrefsManager : MonoBehaviour {
         }
         else
         {
-            DestroyImmediate(this);
+            DestroyImmediate(this.gameObject);
         }
 
-        DontDestroyOnLoad(this);
+        DontDestroyOnLoad(this.gameObject);
     }
 
     public void SetKey(string key, int value)
